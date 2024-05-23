@@ -1,8 +1,6 @@
-from collections import defaultdict
-
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
-        dic = defaultdict(lambda: 0)
+        dic = defaultdict(int)
         for v in s:
             dic[v] += 1
         
