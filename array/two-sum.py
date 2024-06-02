@@ -1,15 +1,12 @@
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        seen = {}
-        n = len(nums)
+        seen = dict()
+        if len(nums) == 0: return []
 
-        for i in range(n):
+        for i in range(len(nums)):
             complement = target - nums[i]
-
-            if complement in seen :
-                return [i, seen[complement]]
-            
+            if complement in seen:
+                return [seen[complement], i]
             seen[nums[i]] = i
-        
         return []
         
