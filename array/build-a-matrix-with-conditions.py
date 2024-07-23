@@ -100,8 +100,6 @@ class Solution:
 
                 self.__dfs(neighbor, adj, visited, order, has_cycle)
 
-                # Early exit if a cycle is detected
-
                 if has_cycle[0]:
 
                     return
