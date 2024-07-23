@@ -15,3 +15,4 @@ class Solution:
         self.result = 0
         recurse(root)
         return self.result
+        
